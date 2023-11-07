@@ -1,10 +1,17 @@
+import allure
 import jsonschema
 import pytest
 from allure import step
+from allure_commons.types import Severity
 
 from contact_list_api_tests.utils.helper import users_api, load_schema
 
 
+@allure.tag('API')
+@allure.severity(Severity.BLOCKER)
+@allure.label('owner', 'Evgenii Li')
+@allure.feature('users')
+@allure.title('Register user')
 def test_add_user_schema_validation(delete_registered_user):
     schema = load_schema('post_users.json')
 
@@ -24,6 +31,11 @@ def test_add_user_schema_validation(delete_registered_user):
         jsonschema.validate(response.json(), schema)
 
 
+@allure.tag('API')
+@allure.severity(Severity.BLOCKER)
+@allure.label('owner', 'Evgenii Li')
+@allure.feature('users')
+@allure.title('Log in schema validation')
 def test_login_schema_validation():
     schema = load_schema('post_users.json')
 
@@ -41,6 +53,11 @@ def test_login_schema_validation():
         jsonschema.validate(response.json(), schema)
 
 
+@allure.tag('API')
+@allure.severity(Severity.BLOCKER)
+@allure.label('owner', 'Evgenii Li')
+@allure.feature('users')
+@allure.title('Log in response body')
 def test_login_response_body():
     response = users_api.post(
         '/login',
