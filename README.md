@@ -1,6 +1,4 @@
 # Проект по тестированию API сайта "https://thinking-tester-contact-list.herokuapp.com/"
-> <a target="_blank" href="https://thinking-tester-contact-list.herokuapp.com/">Ссылка на cайт</a>
-
 ## Список проверок
 ### <a href='https://github.com/evgeniili0322/contact-list-api-tests/blob/master/tests/test_users.py'>/users</a>
  - Проверка регистрации пользователя;
