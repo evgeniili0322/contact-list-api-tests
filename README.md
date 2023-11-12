@@ -34,8 +34,8 @@
 ### Перед запуском:
 Для запуска тестов в корне проекта необходимо создать .env файл со следующим содержанием:
 
-    EMAIL='your_email@example.com'
-    PASSWORD='yourPassword'
+    EMAIL='register_test@qatest.com'
+    PASSWORD='myPassword'
     
 ### Создание виртуального окружения и установка зависимостей:
 ```bash
