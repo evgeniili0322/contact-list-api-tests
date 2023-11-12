@@ -31,6 +31,12 @@
 ![This is an image](design/images/jenkins-allure.png)
 
 ## Запуск автотестов локально
+### Перед запуском:
+Для запуска тество необходимо создать .env файл со следующим содержанием:
+
+    EMAIL='your_email@example.com'
+    PASSWORD='yourPassword'
+    
 ### Создание виртуального окружения и установка зависимостей:
 ```bash
 python -m venv venv
